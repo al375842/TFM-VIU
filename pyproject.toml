@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tfm"
+version = "0.1.0"
+description = "ML-based financial decision-support system: trend prediction and backtesting (VIU Master's Thesis)"
+authors = [{ name = "Lucas Nino Ruiz" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow",            # parquet persistence of raw data
+    "yfinance>=0.2.40",
+    "ta>=0.11",           # technical indicators (recent pandas-ta needs Python >= 3.12)
+    "scikit-learn>=1.4",
+    "scipy>=1.7",         # exact binomial tests (H1, H2)
+    "xgboost>=2.0",
+    "backtesting>=0.6",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "jupyter", "ruff>=0.5"]
+# Optional LSTM extension. Trains on CPU (19,265 parameters, ~35 s per asset);
+# TensorFlow's warning about not finding a GPU on Windows is expected.
+lstm = ["tensorflow>=2.16"]
+
+[project.scripts]
+tfm-pipeline = "tfm.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+# Complexity gate: `ruff check .` fails if a function exceeds 10.
+# Only C901 is checked; code style is not enforced.
+[tool.ruff.lint]
+select = ["C901"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10

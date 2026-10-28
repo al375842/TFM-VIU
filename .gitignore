@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# docs/ stays local
+docs/*
+!docs/ejecucion/
+
+# Thesis document
+main.tex
+uncommented_main.tex
+references.bib
+contar_palabras.py
+/texto*
+/Images/
+
+# Data and results are reproducible
+data/raw/*
+data/processed/*
+results/figures/*
+results/figures_cropped/*
+results/tables/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!results/figures/.gitkeep
+!results/tables/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/

@@ -1,0 +1,16 @@
+{
+  "data/raw/AAPL.parquet": "c5a234b7d409f3822760f6ba83239f839f94c9141c4e4ceb836dfce1a3897087",
+  "data/raw/ACWI.parquet": "73f1358e99596ab55140a494c43e22850b5c34a633327db97e17edf3d92e9e59",
+  "data/raw/AMZN.parquet": "5922a87419620da02e8ebf8e2595e1270bba16b13f83cfdcaeeb64b87dc517e6",
+  "data/raw/BTC_USD.parquet": "bea07461ff2de618d47e4495f10eb62004bcdf01fc30af2a00ccd11114d94377",
+  "data/raw/ETH_USD.parquet": "0ada052d1acf6b043a9c0e6df4259a2b518a170d656b9c3630806722725ffc8d",
+  "data/raw/GDAXI.parquet": "a65d55cff5f67217d0354ca573367de4425e193902a11a6126931f41c7789816",
+  "data/raw/GOOGL.parquet": "2c49bd17e7a486c4afe765bab94092eaeeb3272e1e9a1f5b281898eddb4fd7e9",
+  "data/raw/GSPC.parquet": "aab71543ec904ccfa58f31170b48998faee0325c890b24af4c26a06f43826f98",
+  "data/raw/IBEX.parquet": "96061b534ac36d691b735b9567326f9166bde2e0eaa87e4844c8fc0f56a4b1c7",
+  "data/raw/ITX_MC.parquet": "de189d8dd8bf7fd7bccb720d589ea68d1d8f224a070ec070aa8821dedfa8ce03",
+  "data/raw/IXIC.parquet": "a7d278948d9c7a7da9708b9cc2e86b0f594dc61e44ae88ca9e11cdde6268a768",
+  "data/raw/MSFT.parquet": "06d88759f3166cad82f6f502fdca77d91d8d0a0e0ed3a39906be5496de44cebd",
+  "data/raw/NVDA.parquet": "2f95810e917e742fce9ccb44e2ebd785d0684f7620e3423d8f94b808ec411637",
+  "data/raw/TSLA.parquet": "d9197dd4cd5dff2ca3f9961fb35adda65f6e9ecb68cf131502a581bdff41fc5b"
+}

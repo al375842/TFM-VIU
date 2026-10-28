@@ -1,0 +1,24 @@
+{
+  "principal": {
+    "seconds": 743.9373408999963,
+    "command": [
+      "C:\\Users\\Lucas\\Desktop\\TFM VIU\\tfm-market-ml\\.venv\\Scripts\\python.exe",
+      "-m",
+      "tfm.pipeline",
+      "--offline",
+      "--lstm"
+    ]
+  },
+  "walkforward": {
+    "seconds": 5216.585617600009,
+    "command": [
+      "C:\\Users\\Lucas\\Desktop\\TFM VIU\\tfm-market-ml\\.venv\\Scripts\\python.exe",
+      "-m",
+      "tfm.pipeline",
+      "--offline",
+      "--walk-forward",
+      "--wf-backtest",
+      "--lstm"
+    ]
+  }
+}
